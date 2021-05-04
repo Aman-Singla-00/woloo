@@ -15,7 +15,7 @@ document.getElementById('chb').onclick = function() {
   chv=""
   for (var checkbox of markedCheckbox) {  
     if (checkbox.checked)  
-      chv=chv+checkbox.value + '\n';  
+      chv=chv+checkbox.value;  
   }  
   console.log(chv);
   FB.AppEvents.logEvent(`Vehicle${chv}`);
