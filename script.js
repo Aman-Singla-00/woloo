@@ -11,10 +11,10 @@ b1.addEventListener("click", function(){
 
 document.getElementById('chb').onclick = function() {  
   var markedCheckbox = document.getElementsByName('vehicle');  
-  chv=""
+  chv=[]
   for (var checkbox of markedCheckbox) {  
     if (checkbox.checked)  
-      chv=chv+checkbox.value;  
+      chv.push(checkbox.value);  
   }  
   console.log(chv);
   chbf(chv);
