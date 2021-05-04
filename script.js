@@ -6,7 +6,7 @@ b1.addEventListener("click", function(){
 	rb=document.querySelector('input[name="gender"]:checked').value;
 	if(rb==null){return;}
 	console.log(rb);
-	FB.AppEvents.logEvent(`Gender${rb}`);
+	FB.AppEvents.logEvent(FB.AppEvents.EventNames.GENDER,null,rb);
 
 });
 
