@@ -6,7 +6,7 @@ b1.addEventListener("click", function(){
 	rb=document.querySelector('input[name="gender"]:checked').value;
 	if(rb==null){return;}
 	console.log(rb);
-	FB.AppEvents.logEvent(`gender=${rb}`);
+	FB.AppEvents.logEvent(`Gender${rb}`);
 
 });
 
@@ -18,7 +18,7 @@ document.getElementById('chb').onclick = function() {
       chv=chv+checkbox.value + '\n';  
   }  
   console.log(chv);
-  FB.AppEvents.logEvent(`vehicle=${chv}`);
+  FB.AppEvents.logEvent(`Vehicle${chv}`);
 }
 
 
