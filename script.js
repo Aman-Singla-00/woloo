@@ -32,7 +32,7 @@ b2=document.getElementById("ip")
 b2.addEventListener("click", function(){
 	inp=document.getElementById('inp');
 	console.log(inp.value); 
-	FB.AppEvents.logEvent("Text",3,inp);
+	FB.AppEvents.logEvent("Text",3,inp.value);
 	inp.value="";
 });
 
